@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<style>
+    @media screen and (max-width: 1000px)
+    {
+        header{
+            flex-direction: column;
+        }
+        .container{
+          
+            flex-direction: column;
+            /* align-items: center; */
+        }
+        nav{
+            flex-direction: column;
+
+        }
+        .container, .cus, .last{
+            flex-direction: column;
+            gap: 5px;
+        }
+    
+
+
+  
+    }
+    .main{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hd{
+
+        font-family: Arial, Helvetica, sans-serif;
+        max-width:13%;
+        display:flex;
+        align-items: center;
+        justify-content:space-around; 
+
+    }
+     .hd1{
+       
+        font-family: Arial, Helvetica, sans-serif;
+        width:25%;
+        align-items: center;
+        justify-content:space-around; 
+        display:flex;
+
+    }
+    header{
+        
+        display: flex;
+        justify-content:space-between; 
+        margin: 5px;
+        padding:5px;
+       
+    
+    }
+    nav{
+        display:flex;
+        justify-content:space-between;
+        text-align: center;
+    }
+   .nav-wrap{
+    
+        background-color: red;
+   }
+    li{
+       display:inline-flex;    
+        list-style: none;
+    }
+    
+    a{
+        font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    border-color: white;
+    padding: 15px;
+    text-decoration: none;
+    position: relative;
+    }
+   a::after {
+  content: "";
+  position: absolute;
+  /* width: 0; */
+  height: 1px;
+  background: lightpink;
+  left: 0;
+  bottom: 0;
+  transition: 0.1s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+a:active::after {
+  width: 100%;
+}
+
+
+   .ar{
+    width:100%;
+    height: 400px;
+    object-fit: fill;
+
+   }
+   .art{
+   
+    position:relative;
+   
+    
+    
+        
+   }
+   .sp{
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+  
+
+    
+   }
+   .para{
+     font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+
+   }
+   .btn{
+    outline-style: double;
+    outline-color: lightpink;
+    outline-width: 5px;
+    border-radius: 50px;
+    border-style: double;
+    border-color: lightpink;
+    background-color: lightpink;
+    padding:10px;
+    max-width:150px;
+   }
+
+   .dv{
+    /* margin:20px */
+    padding: 15px;
+     font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+   }
+   .sec{
+   
+     font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif
+
+   }
+   .best{
+    padding: 15px;
+     font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+   
+   }
+   .img4{
+    align-items: center;
+   }
+  
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .card {
+      text-align: center;
+      display: block;
+      
+    }
+    .box1{
+        border:2px solid lightpink ;
+        max-width:30%;
+        height:auto;
+        font-size: small;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 10px;
+        padding:50px;
+        position: relative;
+        text-align:left;
+    }   
+    .cus{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+       
+    }
+    .ci{
+        
+        position:absolute;
+        left:40px;
+        top:10px;
+        
+    }
+    .last{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly       
+    }
+    .map{
+        border: white;
+         width: 350px;
+         height: 200px;
+         border-radius: 10px;
+        
+  
+    }
+    .map2{
+         border:2px solid lightpink;
+         width:350px;
+         height:100px;
+         border-radius: 10px;
+         padding: 30px;
+         display: flex;
+         align-items:center;
+         justify-content: space-around;
+    }
+    .map3{
+        color:lightpink;
+         font-size: 18px;
+          font-family: Arial, Helvetica, sans-serif;
+
+    }
+    
+  
+
+</style>
+<body>
+    <header>
+        <div class="hd">
+       <span><b> Follow Us:</b></span>
+        <i><img src="f-icon.png"></i>
+        <!-- <dt></dt> -->
+        <i><img src="insta-icon.png"></i>
+        <!-- <dt></dt> -->
+        <i><img src="twitter-icon.png"></i>
+        </div>
+        <div class="hd1">   
+            <i><img src="phone-icon.png"></i> <span><b>call us:</b>+44 985637895</span>
+            <span><b>login</b></span><i><img src="user-icon.png"></i>
+            <span><b>Cart</b></span><i><img src="user-icon.png"></i>
+        
+          
+        </div>
+    </header>
+    <hr>
+    <div class="nav-wrap">
+  <nav class="main">
+    <img src="logo.png">
+    <ul class=".u1">
+        <li><a href="">Home</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Cake</a></li>
+        <li><a href="">cupcakes</a></li>
+        <li><a href="">Eclairs</a></li>
+        <li><a href="">Tasts</a></li>
+        <li><a href="">Terms & Conditions</a></li>
+        <li><a href="">Contact us</a></li>
+        
+    </ul>
+  </nav>
+  </div>
+  <article class="art">
+    <img class="ar" src="slider.jpg">
+    <div class="sp"> 
+        <h3> Delicious Cake<br>Get you own slice of heaven</h3>
+<p style="font-size: small ; font-family:Arial, Helvetica, sans-serif">According to individual recipe for every taste!</p>
+<button class="btn">
+    order now
+</button></div>
+</article>
+<article class="dv">
+    <h3>About COCO By Haani</h3>
+    <p class="sec">Coco by Haani is an online cake and dessert shop provding minimal and modern buttercream cakes, eclairs, tarts, cupcakes,macrons and all sort of breakfast pastries</p>
+    <p class="sec">
+        We are located in London and all products are handcrafted and made to order.
+    </p>
+    <ul class=".u1"><b>
+        <li><a href="">delicious</a></li>
+        <li><a href="">Art & Beauty</a></li>
+        <li><a href="">Mood boost</a></li>
+         </b>
+    </ul>
+    <button class="btn">Read More</button>
+  </article>
+  <article class="main">
+  <section class="best">
+    <h3>    Our best products</h3>
+    <ul class=".u1">
+        <li><a href="">Cakes</a></li>
+        <li><a href="">Cupcakes</a></li>
+        <li><a href="">Eclairs</a></li>
+        <li><a href="">Tasts</a></li>    
+    </ul>
+</section>
+    <section class="container">
+        <div><img src="arrow-left.png"></div>
+        <div class="card"><img src="image1.jpg"><h3>cake name</h3><span style="display: block;">5.00</span><button class="btn" style=" width:90px;">order now</button></div>
+        <div class="card"><img src="image2.jpg"><h3>cake name</h3><span style="display: block;">50.00</span><button class="btn" style=" width:90px;">order now</button></div>
+        <div class="card"><img src="image3.jpg"><h3>cake name</h3><span style="display: block;">50.00</span><button class="btn" style=" width:90px;">order now</button></div>
+        <div class="card"><img src="image4.jpg"><h3>cake name</h3><span style="display: block;">50.00</span><button class="btn" style=" width:90px;">order now</button></div>
+        <div><img src="arrow-right-hover.png"></div>
+       
+        </div>
+    </section>
+    </article>
+    <article class="main">
+    <section class="best">
+        <h3>What Our Customers Say?</h3>
+        <div class="cus">
+            <div><img src="arrow-left-hover.png"></div>
+        <div class="box1">
+
+            <div><img class="ci" src="customar-image.png"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis numquam aspernatur, dicta sunt doloribus blanditiis eius quo vel sapiente sequi veritatis accusamus quas adipisci vero expedita non impedit qui.</p><P style="color:lightpink">George client</P><p style="color: silver;">Customer</p></div>
+            </div>
+             <div class="box1">
+            <div><img class="ci" src="customar-image.png"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem illum inventore suscipit ut, corporis at dolor mollitia? Nam accusamus accusantium, totam harum, voluptatem voluptas sequi ex ad inventore voluptatibus incidunt?</p><P style="color:lightpink">George client</P><p style="color: silver;">Customer</p></div>
+            </div>
+            <div><img src="arrow-right.jpg"></div>
+        </div>
+    </section>
+</article>
+            <article class="main">
+                <div class="best"><h3>Contact Us</h3></div>
+                <section class="last main">
+                <div class="map">
+                    <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435521.95368151565!2d74.0047345272737!3d31.48251798697851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Pakistan!5e0!3m2!1sen!2s!4v1752565726841!5m2!1sen!2s"></iframe>
+                </div>
+                <div class="map2">
+
+                <div class="sub">
+                <div><address class="map3">Address </address><P>shop no 123 <br> streek UK1</P></div>
+                <div><p class="map3">Telephone </p><P>+44 89567855</P></div>
+               </div>
+                <div class="sub1">
+                <div><p class="map3">Opening Hours</p><p>Mon-Sun<br>from 8:00 to 21:00</p></div>
+                <div><p class="map3">Opening Hours</p><p>Mon-Sun<br>from 8:00 to 21:00</p></div>
+               </div>
+                </div>
+                </section>
+                </article>
+                <article class="copy main">
+                <section style="font-family: Arial, Helvetica, sans-serif; font-size: medium" class="best"><img src="logo.png"><P>Copywrite.All Rights Reserved</P></section>
+            </article>
+</body>
+</html>
